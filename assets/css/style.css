@@ -71,7 +71,7 @@ body {
 }
 
 .section-spacing {
-  padding: var(--spacing-4xl) 0;
+  padding: var(--spacing-3xl) 0;
 }
 
 img {
@@ -370,11 +370,12 @@ MARQUEE
   font-size: 1.75em;
   font-weight: 500;
   margin: 24px 0 15px;
-  color: var(--muted);
+  color: var(--black);
 }
 
 .feature .card p {
   margin-bottom: var(--spacing-lg);
+  color: var(--muted);
 }
 
 
@@ -640,11 +641,15 @@ ABOUT PAGE
 ========================= */
 .about-section .banner {
   max-width: 45%;
-  margin:80px auto;
+  margin:80px auto 0;
 }
 
 .about-section {
   padding-top: 100px;
+}
+
+.founder-section {
+  padding-bottom: var(--spacing-3xl);
 }
 
 .founder-story {
@@ -807,6 +812,8 @@ MEDIA QUERIES
   .navbar ul li a {
     display: block;
     padding: 15px 0;
+        font-size: 20px;
+
   }
 
   .button-mobile {
@@ -1010,6 +1017,10 @@ MEDIA QUERIES
     padding: 0 var(--spacing-sm);
   }
 
+  .founder-section {
+  padding-bottom: var(--spacing-lg);
+}
+
   /* .section-spacing {
     padding: var(--spacing-l) 0;
   } */
@@ -1024,7 +1035,7 @@ a {
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 2.15em;
 }
 /*HERO ===================================== */
 
@@ -1113,8 +1124,9 @@ h2 {
 
 .about-section .banner {
   max-width: 100%;
-  margin:80px auto;
+  margin:48px auto 0;
 }
+
 
 .founder-story {
         grid-template-columns: 1fr;
@@ -1139,6 +1151,11 @@ h2 {
     font-weight: 400;
     font-size: 28px;
     margin-bottom: 10px;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 20px;
 }
 
 }
